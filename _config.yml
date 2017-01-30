@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Glenna DeRoy
-description: This is where I'll post career updates and projects
+description: Product at CommonBond. Feminist. :muscle: Traveler. :earth_americas: Baseball fan. :baseball: Coffee junkie. :coffee:
+gems:
+  - jemoji
