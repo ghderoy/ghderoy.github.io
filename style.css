@@ -1,18 +1,19 @@
 * {
 	color: Black;
-	background-color: #D7CEC7;
+	background-color: #F9F2E7;
 }
 
 h1 {
 	font-family: 'Pacifico', cursive;
 	font-size: 3.500em;
-	color: #76323F;
+	color: #3A2340;
+	line-height: 0.5em;
 }
 
 h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.125em;
-	color: #565656;
+	color: #4F4F51;
 }
 
 /* another color Tan) #C09F80) */
