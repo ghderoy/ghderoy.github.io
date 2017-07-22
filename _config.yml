@@ -1,5 +1,14 @@
-theme: jekyll-theme-minimal
+---
 title: Glenna DeRoy
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+theme: jekyll-theme-minimal
 description: Product at CommonBond. Feminist. Traveler. Baseball fan. Coffee junkie.
 gems:
-  - jemoji
+- jemoji
