@@ -1,24 +1,83 @@
-* {
-	color: #4A5155;
-	background-color: #FFF;
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tokens */
+:root {
+  --color-bg: #FAF7F4;
+  --color-text: #3D3530;
+  --color-muted: #8C7B72;
+  --color-accent: #7A5C4F;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+main {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 2.5rem;
 }
 
 h1 {
-	font-family: 'Pacifico', cursive;
-	font-size: 3.500em;
-	color: #3A1E3B;
-	line-height: 0.5em;
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: 0.6rem;
 }
 
-h2 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.125em;
-	color: #4A5155;
+.tagline {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
 }
 
-h3 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
-	color: #4A5155;
+/* Bio */
+.bio {
+  margin-bottom: 2.5rem;
 }
-/* another color Tan) #C09F80) */
+
+.bio p {
+  font-size: 1rem;
+  color: var(--color-text);
+  max-width: 52ch;
+}
+
+/* Footer */
+footer a {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-accent);
+  padding-bottom: 1px;
+  transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+  opacity: 0.65;
+}
