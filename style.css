@@ -10,7 +10,7 @@
   --color-bg: #FAF7F4;
   --color-text: #3D3530;
   --color-muted: #8C7B72;
-  --color-accent: #7A5C4F;
+  --color-accent: #2E5755;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
 }
@@ -58,6 +58,10 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.bio p:first-of-type {
+  font-weight: 600;
+}
+
 .bio p + p {
   margin-top: 1rem;
 }
@@ -67,17 +71,19 @@ h1 {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.6rem 1.4rem;
-  background-color: var(--color-accent);
-  color: #FAF7F4;
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 1.5px solid var(--color-accent);
   font-family: var(--font-sans);
   font-size: 0.875rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 2px;
-  transition: opacity 0.2s ease;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  background-color: var(--color-accent);
+  color: #FAF7F4;
 }
