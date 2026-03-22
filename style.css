@@ -55,6 +55,7 @@ h1 {
   font-size: 1rem;
   color: var(--color-text);
   max-width: 52ch;
+  margin-bottom: 1rem;
 }
 
 .bio p + p {
@@ -64,7 +65,7 @@ h1 {
 /* Button */
 .btn {
   display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   padding: 0.6rem 1.4rem;
   background-color: var(--color-accent);
   color: #FAF7F4;
